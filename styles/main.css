@@ -7,6 +7,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+header {
+  border-bottom: 1px solid #dedede;
+}
 .header {
   font-family: "Open Sans", sans-serif;
   display: flex;
@@ -35,6 +38,9 @@ body {
   color: #443737;
   text-decoration: none;
 }
+.header-nav a:hover {
+  color: #ffc725;
+}
 .header-nav a::after {
   content: "";
   width: 100%;
@@ -53,6 +59,7 @@ body {
   border: none;
   padding: 0;
   gap: 10px;
+  cursor: pointer;
 }
 .button-item {
   position: relative;
@@ -83,6 +90,7 @@ body {
   background-size: cover;
   background-position: center center;
   padding: 142px 0;
+  margin-bottom: 140px;
 }
 .breadcrumbs {
   padding-left: 0;
@@ -90,7 +98,7 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 7px;
 }
 .breadcrumbs a {
   color: #dedede;
@@ -98,25 +106,84 @@ body {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
+.breadcrumbs a:hover {
+  color: #ffc725;
+}
 .breadcrumbs a::before {
   content: "/";
   position: relative;
-  left: -7px;
+  left: -3px;
+  pointer-events: none;
 }
+.breadcrumbs a:hover::before {
+  color: #dedede;
+}
+
 .breadcrumbs li:first-child a::before {
   display: none;
 }
 .title {
   font-weight: 700;
   font-size: 79px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 17px;
+  margin-bottom: 20px;
 }
 .description {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: #faf9f9;
-  line-height: 1.5;
+  line-height: 1.6;
   max-height: 320px;
   margin: 0 auto;
 }
+.banner-box{
+  background-image: url(../image/homemade-tasty-beef-burger-4BM65XU\ \(1\).png);
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 100px 120px 100px;
+  margin-bottom: 100px;
+}
+.banner-link {
+  font-size: 14px;
+  font-weight: 700;
+  color:#1e2f40 ;
+  text-decoration: none;
+  /* text-align: center; */
+  background-color: #fbb731;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px 27px;
+  text-transform: uppercase;
+}
+.banner-title{
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.banner-title span{
+  font-family:"Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f37335;
+  border-radius: 14px;
+  display: block;
+  max-width: 96px;
+  padding: 5px 0;
+  margin-bottom: 9px;
+}
+.banner-text{
+  font-family:"Open Sans", sans-serif; 
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #faf9f9;
+  max-width: 325px;
+  padding-bottom: 35px;
+  margin-bottom: 15px;
+}
+
+
